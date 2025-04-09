@@ -109,7 +109,7 @@
 				   	</div>
 						
 								<?php
-                            $conn = mysqli_connect
+                            $conn = 
                             if (!$conn) {
                                 die("Connection failed: " . mysqli_connect_error());
                             }
@@ -137,7 +137,7 @@
                         <div class="col-md-12" id="sqlmessage2" class="sqlmessage"></div>
                         
                         <?php
-														$conn = mysqli_connect
+														$conn = 
                             if (!$conn) {
                                 die("Connection failed: " . mysqli_connect_error());
                             }
@@ -155,37 +155,37 @@
 														    $inputi = $_POST["I"];
 														    $inputj = $_POST["J"];
 														    $inputf = $_POST["F"];
-														    $inputfa = $_POST["F A"];
-														    $inputfb = $_POST["F B"];
-														    $inputfc = $_POST["F C"];
-														    $inputfd = $_POST["F D"];
-														    $inputfe = $_POST["F E"];
-														    $inputff = $_POST["F F"];
-														    $inputfg = $_POST["F G"];
-														    $inputfh = $_POST["F H"];
+														    $inputfa = $_POST["FA"];
+														    $inputfb = $_POST["FB"];
+														    $inputfc = $_POST["FC"];
+														    $inputfd = $_POST["FD"];
+														    $inputfe = $_POST["FE"];
+														    $inputff = $_POST["FF"];
+														    $inputfg = $_POST["FG"];
+														    $inputfh = $_POST["FH"];
 														    $inputk = $_POST["K"];
-														    $inputka = $_POST["K A"];
-														    $inputkb = $_POST["K B"];
-														    $inputkc = $_POST["K C"];
+														    $inputka = $_POST["KA"];
+														    $inputkb = $_POST["KB"];
+														    $inputkc = $_POST["KC"];
 														    $inputl = $_POST["L"];
 														    $inputm = $_POST["M"];
 														    $inputn = $_POST["N"];
 														    $inputo = $_POST["O"];
 														    $inputp = $_POST["P"];
-														    $inputpa = $_POST["P A"];
+														    $inputpa = $_POST["PA"];
 														    $inputq = $_POST["Q"];
-														    $inputqa = $_POST["Q A"];
+														    $inputqa = $_POST["QA"];
 														    $inputr = $_POST["R"];
-														    $inputra = $_POST["R A"];
+														    $inputra = $_POST["RA"];
 														    $inputs = $_POST["S"];
 														    $inputt = $_POST["T"];
 														    $inputu = $_POST["U"];
 														    $inputv = $_POST["V"];
 														    $inputw = $_POST["W"];
-														    $inputwa = $_POST["W A"];
+														    $inputwa = $_POST["WA"];
 														    $inputx = $_POST["X"];
 														    $inputy = $_POST["Y"];
-														    $inputya = $_POST["Y A"];
+														    $inputya = $_POST["YA"];
 														    
 														    $sql = "";
 
@@ -197,7 +197,7 @@
 															 if ($inputc > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"C\", $inputc);";
 															 if ($inputd > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"D\", $inpute);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"D\", $inputd);";
 															 if ($inpute > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"E\", $inpute);";
 															 if ($inputg > 1)
@@ -211,29 +211,31 @@
 															 if ($inputf > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"F\", $inputf);";
 															 if ($inputfa > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"F A\", $inputf1);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"FA\", $inputfa);";
 															 if ($inputfb > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"F B\", $inputf2);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"FB\", $inputfb);";
 															 if ($inputfc > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"F C\", $inputf3);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"FC\", $inputfc);";
 															 if ($inputfd > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"F D\", $inputf4);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"FD\", $inputfd);";
 															 if ($inputfe > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"F E\", $inputf5);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"FE\", $inputfe);";
+															 if ($inputff > 1)
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"FF\", $inputff);";
 															 if ($inputfg > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"F F\", $inputf6);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"FG\", $inputff);";
 															 if ($inputfh > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"F G\", $inputf7);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"FH\", $inputfg);";
 															 if ($inputk > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"K\", $inputk);";
 															 if ($inputka > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"K A\", $inputk);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"KA\", $inputka);";
 															 if ($inputkb > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"K B\", $inputk);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"KB\", $inputkb);";
 															 if ($inputkc > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"K C\", $inputk);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"KC\", $inputkc);";
 															 if ($inputl > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"L\", $inputm);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"L\", $inputl);";
 															 if ($inputm > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"M\", $inputm);";
 															 if ($inputn > 1)
@@ -243,15 +245,15 @@
 															 if ($inputp > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"P\", $inputp);";
 															 if ($inputpa > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"P A\", $inputp);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"PA\", $inputpa);";
 															 if ($inputq > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"Q\", $inputq);";
 															 if ($inputqa > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"Q A\", $inputp);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"QA\", $inputqa);";
 															 if ($inputr > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"R\", $inputr);";
 															 if ($inputra > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"R A\", $inputr1);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"RA\", $inputra);";
 															 if ($inputs > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"S\", $inputs);";
 															 if ($inputt > 1)
@@ -263,13 +265,13 @@
 															 if ($inputw > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"W\", $inputw);";
 															 if ($inputwa > 1)
-		 													 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"W A\", $inputw);";
+		 													 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"WA\", $inputwa);";
 															 if ($inputx > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"X\", $inputx);";
 															 if ($inputy > 1)
 															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"Y\", $inputy);";
 															 if ($inputya > 1)
-															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"Y A\", $inputy1);";
+															 		$sql .= "INSERT INTO votes (badge_id, category, product_id) VALUES ($badge, \"YA\", $inputya);";
 
 
 																if ($conn->multi_query($sql) === TRUE) {
